@@ -37,7 +37,7 @@ L.geoJSON(data, {
 
 }).addTo(map);
 
-});
+}); 
 
 
 
