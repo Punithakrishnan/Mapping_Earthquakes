@@ -35,6 +35,7 @@ let map = L.map("map", {
   layers: [streets]
 });
 
+<<<<<<< HEAD
 
 // Accessing the Toronto airline routes GeoJSON URL.
 let torontoData = "https://raw.githubusercontent.com/Punithakrishnan/Mapping_Earthquakes/main/torontoRoutes.json";
@@ -47,6 +48,8 @@ L.geoJSON(data).addTo(map);
 });
 
 
+=======
+>>>>>>> dc4b8cd472be23c8630684314cc28c43a44ed9a1
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
 
@@ -57,12 +60,15 @@ L.control.layers(baseMaps).addTo(map);
 // Accessing the airport GeoJSON URL
 let airportData = "https://raw.githubusercontent.com/Punithakrishnan/Mapping_Earthquakes/main/majorAirports.json" ;
 
+<<<<<<< HEAD
 // Create a style for the lines.
 let myStyle = {
   color: "#ffffa1",
   weight: 2
 }
 
+=======
+>>>>>>> dc4b8cd472be23c8630684314cc28c43a44ed9a1
 // Grabbing our GeoJSON data.
 d3.json(airportData).then(function(data) {
   console.log(data);
@@ -72,7 +78,10 @@ d3.json(airportData).then(function(data) {
 
 // Grabbing our GeoJSON data. adding thepointto layer function
 L.geoJSON(data, {
+<<<<<<< HEAD
   style: myStyle,
+=======
+>>>>>>> dc4b8cd472be23c8630684314cc28c43a44ed9a1
   // We turn each feature into a marker on the map.
   onEachFeature: function(feature, layer) {
     console.log(layer)
