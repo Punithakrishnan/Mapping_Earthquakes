@@ -28,13 +28,12 @@ let baseMaps = {
   Dark: dark
 };
 
-// Create the map object with center, zoom level and default layer.
-let map = L.map('map', {
+// Create the map object with a center and zoom level.
+let map = L.map("map", {
   center: [30, 30],
-  zoom: 2,
+  zoom: 4,
   layers: [streets]
 });
-
 
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
@@ -64,7 +63,8 @@ L.geoJSON(data, {
 }).addTo(map);
 
 }); 
-//
+
+
 
 
 
